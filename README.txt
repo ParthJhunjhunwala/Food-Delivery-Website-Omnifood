@@ -1,0 +1,1 @@
+This website was developed and implemented by me during the course of learning frontend web development through an online course.
