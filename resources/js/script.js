@@ -4,14 +4,20 @@ $(document).ready(function(){
     $('.js--section-features').waypoint(function(direction) {
         if (direction == "down"){
             $('nav').addClass('sticky');
+            $('#top i').addClass('show');
         }
         else{
             $('nav').removeClass('sticky');
+            $('#top i').removeClass('show');
         }
     }, {
         offset:'60px;'
     });
     
+    /*SCROOL TP TOP BUTTON*/
+    $('#top i').click(function(){
+       $('html,body').animate({scrollTop: $('body').offset().top},1000); 
+    });
     
     /* SCROLL ON BUTTONS*/
     $('.js--scroll-to-plans').click(function(){
